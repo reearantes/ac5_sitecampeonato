@@ -10,9 +10,9 @@ app.config['SQLALCHEMY_DATABASE_URI']='mysql+pymysql://root:mudar@2021@localhost
 db = SQLAlchemy(app)
 
 class equipes(db.Model):
-    __tablename__="relacao_equipes"
+    __tablename__="equipes"
     _id = db.Column(db.Integer,primary_key=True,autoincrement=True)
-    equipe  = db.Column(db.String(50))
+    equipe = db.Column(db.String(50))
     def __init__(self,equipe):
         self.equipe = equipe
 
@@ -46,9 +46,10 @@ def cadastrar():
             db.session.commit()
     return redirect(url_for("mensagem"))
 
-@app.route("/equipes")
-def equipes():
-    return render_template("equipes.html")
+@app.route("/times")
+
+def times():
+    return render_template("times.html")
 
 app.run(debug=True)
 
