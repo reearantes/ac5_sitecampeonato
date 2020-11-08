@@ -1,0 +1,108 @@
+  
+/* Imagem de fundo (alterar o arquivo "fundo.png" para trocar) s*/
+body{
+    background-image: url(fundo.png);
+}
+
+
+/* CSS DO MENU */
+ul.topmenu {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #666;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  li.topmenu {
+    float: left;
+    border-right:1px solid #bbb;
+  }
+  
+  li:last-child {
+    border-right: none;
+    border-left:1px solid #bbb;
+  }
+  
+  li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  li a:hover:not(.active) {
+    background-color: darkslategray;
+  }
+  
+  .active {
+    background-color: darkgrey;
+  }
+
+li.direita{
+    float:right;
+}
+
+/* titulo */
+h2.branco{
+    font-family:Verdana, Arial, Helvetica, sans-serif;
+    text-align: center;
+    color:#ffffff;
+ }
+
+/* formatação conteudo*/
+p.conteudo{
+    margin: 3;
+    color: #ffffffe1;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+
+/* formatação conteudo*/
+p.conteudo2{
+    margin: 3;
+    text-indent: 3ch;
+    color: #d6d6d6;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+li.open{
+    list-style: disc;
+} 
+
+li.closed {
+    list-style: disc;
+}
+
+h2.lista{
+    margin: 3;
+    text-indent: 3ch;
+    color: #ffffff;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+h1.branco{
+  margin: 3;
+  text-indent: 3ch;
+  color: #ffffff;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+ul.topmenu {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #666;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+  }
